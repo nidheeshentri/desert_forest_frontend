@@ -29,7 +29,7 @@ export default function DashSidebar() {
           <Tooltip>
             <TooltipTrigger asChild>
               <Link
-                href="http://localhost:3000/dashboard/overview"
+                href="http://13.61.148.90:3000/dashboard/overview"
                 className="group flex h-10 w-10 items-center justify-center rounded-lg bg-primary text-primary-foreground transition-colors hover:bg-primary/90"
                 prefetch={false}
               >
@@ -42,7 +42,7 @@ export default function DashSidebar() {
           <Tooltip>
             <TooltipTrigger asChild>
               <Link
-                href="http://localhost:3000/dashboard/messages"
+                href="http://13.61.148.90:3000/dashboard/messages"
                 className="group flex h-10 w-10 items-center justify-center rounded-lg text-muted-foreground transition-colors hover:bg-muted/50 hover:text-foreground"
                 prefetch={false}
               >
@@ -55,7 +55,7 @@ export default function DashSidebar() {
           <Tooltip>
             <TooltipTrigger asChild>
               <Link
-                href="http://localhost:3000/dashboard/campaigns"
+                href="http://13.61.148.90:3000/dashboard/campaigns"
                 className="group flex h-10 w-10 items-center justify-center rounded-lg text-muted-foreground transition-colors hover:bg-muted/50 hover:text-foreground"
                 prefetch={false}
               >
