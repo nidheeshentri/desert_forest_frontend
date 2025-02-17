@@ -56,7 +56,7 @@ import { useRouter } from 'next/navigation'
       setLoading(true)
       setError("")
       setShowSuccess(false)
-      axios.get(`http://localhost:8000/forgot-password/?email=${loginCredentials.email}`)
+      axios.get(`http://13.61.148.90:8000/forgot-password/?email=${loginCredentials.email}`)
       .then(res => {
         setLoading(false)
         console.log(res.data)
@@ -85,7 +85,7 @@ import { useRouter } from 'next/navigation'
       }
       else{
         setLoading(true)
-        axios.post("http://localhost:8000/forgot-password/", loginCredentials)
+        axios.post("http://13.61.148.90:8000/forgot-password/", loginCredentials)
         .then(res => {
           setLoading(false)
           console.log(res.data)

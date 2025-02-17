@@ -71,7 +71,7 @@ function LinkedinLoginButton() {
       setLoading(true)
       setError("")
       setShowSuccess(false)
-      axios.post("http://localhost:8000/api/token/", loginCredentials)
+      axios.post("http://13.61.148.90:8000/api/token/", loginCredentials)
       .then(res => {
         setLoading(false)
         console.log(res.data)

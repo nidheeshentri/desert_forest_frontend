@@ -61,7 +61,7 @@ import { useRouter } from "next/navigation";
         setError("Email ID is not valid. Please enter valid Email ID.")
       }
       else{
-        axios.post("http://localhost:8000/register/", data)
+        axios.post("http://13.61.148.90:8000/register/", data)
         .then(res => {
           setShowSuccess(true)
           router.push("/login")

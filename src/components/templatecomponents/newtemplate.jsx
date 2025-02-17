@@ -29,7 +29,7 @@ import { Bold, Italic, SmilePlus, Image as ImageIcon, FileText, Video, Phone, Li
 import data from '@emoji-mart/data'
 import dynamic from 'next/dynamic'
 import { debounce } from 'lodash'
-const backendAPI = "http://localhost:8000"
+const backendAPI = "http://13.61.148.90:8000"
 
 const Picker = dynamic(() => import('@emoji-mart/react'), { ssr: false })
 
@@ -246,9 +246,11 @@ export default function TemplateCreator() {
               <Video className="h-8 w-8 text-gray-400" />
             </div>
             <div>
-              <p className="text-sm text-gray-500">Add Video</p>
-              <p className="text-xs text-gray-400">MP4. Max 16MB</p>
-              <input type = "file" name = "video" style = {{height: "0px", visibility: "hidden"}} onChange={fileChangeHandler}/>
+              <label>
+                <p className="text-sm text-gray-500">Add Video</p>
+                <p className="text-xs text-gray-400">MP4. Max 16MB</p>
+                <input type = "file" name = "video" style = {{height: "0px", visibility: "hidden"}} onChange={fileChangeHandler}/>
+              </label>
             </div>
           </div>
         )
@@ -259,9 +261,11 @@ export default function TemplateCreator() {
               <FileText className="h-8 w-8 text-gray-400" />
             </div>
             <div>
-              <p className="text-sm text-gray-500">Add Document</p>
-              <p className="text-xs text-gray-400">PDF, DOC. Max 100MB</p>
-              <input type = "file" name = "document" style = {{height: "0px", visibility: "hidden"}} onChange={fileChangeHandler}/>
+              <label>
+                <p className="text-sm text-gray-500">Add Document</p>
+                <p className="text-xs text-gray-400">PDF, DOC. Max 100MB</p>
+                <input type = "file" name = "document" style = {{height: "0px", visibility: "hidden"}} onChange={fileChangeHandler}/>
+              </label>
             </div>
           </div>
         )

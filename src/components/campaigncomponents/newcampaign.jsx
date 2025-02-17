@@ -34,7 +34,7 @@ import { zodResolver } from "@hookform/resolvers/zod"
 import { create } from 'zustand'
 import axios from 'axios'
 
-const backendAPI = "http://localhost:8000"
+const backendAPI = "http://13.61.148.90:8000"
 
 const campaignSchema = z.object({
   name: z.string().min(1, "Campaign name is required"),
@@ -106,7 +106,7 @@ export default function CampaignCreator() {
         authorization: localStorage.getItem("access_token")
       }
     }
-    axios.get("http://localhost:8000/templates", config)
+    axios.get("http://13.61.148.90:8000/templates", config)
     .then(res => {
       setTemplates(res.data)
       setSelectedTemplate(res.data[0])
